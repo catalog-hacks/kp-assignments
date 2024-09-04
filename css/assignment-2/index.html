@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pink1: '#F64C72',
+                        violet: "#553d67",
+                        primary: "#fff",
+                        grey1: "#6D7D8B" 
+                    },
+                    fontFamily: {
+                        opensans: ["Open Sans", "normal"],
+                        mullish: ["Mulish", "normal"],
+                    },
+                    backgroundImage: {
+                        herobg: "url('./assets/hero-bg.jpeg')",
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CSS Assignment 2</title>
+</head>
+
+<body class="w-full h-full font-opensans ">
+    <div class="min-h-screen w-full">
+        <header class="w-full flex flex-col items-center justify-center  mb-[35px]">
+            <div class="header-logo flex flex-col items-center mb-8">
+                <img src="./assets/header-logo.svg" alt="header-logo" class="w-[7.5rem] h-[7.5rem]" />
+                <p class="text-lg font-semibold -mt-4 font-mullish">
+                    <span class="text-pink1">TECHNO</span><span class="text-violet">FEVERS</span>
+                </p>
+            </div>
+
+            <nav class="header-nav text-xl text-violet flex gap-11">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#">Team</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </header>
+
+
+        <div class="relative w-full h-[583px] flex items-center justify-center z-2">
+
+            <div class="absolute inset-0 bg-herobg bg-cover bg-center"></div>
+
+            <div class="absolute inset-0 bg-[#6D5357] bg-opacity-50"></div>
+
+
+            <div class="relative flex-col z-10">
+
+                <div class="text-center text-primary z-2">
+                    <h1 class="font-mullish text-[48px] font-bold"><span>Instant collaboration </span></h1>
+                    <h1 class="font-mullish text-[48px] font-bold"> for productive projects</h1>
+
+                    <div class="mt-[15px] z-2">
+                        <h1 class="font-mullish text-base font-bold">
+                            <span>We are full-service software company that specilizes in </span>
+                        </h1>
+                        <h1 class="font-mullish text-base font-bold">in developing complex web solutions</h1>
+                    </div>
+
+
+                </div>
+
+                <div class="flex gap-[20px] mt-12 z-2">
+                    <input class="w-[320px] p-5 h-[56px] border-[#bbc8d4] border-[2px] rounded-md" placeholder="Email"
+                        type="text" />
+                    <button class="w-[165px] h-[56px] rounded rounded-md bg-pink1 text-primary font-semibold">Get in
+                        touch</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about" class="relative w-full flex justify-center -mt-[60px] p-5 z-20 text-grey1">
+            <div class="bg-primary w-[961px] h-[634px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] p-10">
+                <div class="flex flex-col items-center w-full mb-8">
+                    <h1 class="text-5xl font-mullish font-medium text-violet text-center">ABOUT US</h1>
+                    <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+                </div>
+
+                <div class="w-full text-center w-[700px] mx-auto  ">
+                    <p class="text-lg mb-6">
+                        TechnoFevers is a full-service software development company that specializes <br /> in
+                        developing complex web
+                        solutions. We are focused on designing and developing <br /> customer-centric products and
+                        applications for startups
+                        to elite business <br /> groups across the globe.
+                    </p>
+                    <p class="text-lg">
+                        We build the foundation for cognitive business by working with complex technologies and rapidly
+                        evolving
+                        business environments to offer project performance optimization.
+                    </p>
+                </div>
+
+
+                <div class="w-[720px] mx-auto mt-[45px] p-5 flex-col    ">
+                    <div class="bg-violet h-[1px] w-[100%]"></div>
+
+                    <div class="flex w-[79%] justify-between justify-between mx-auto relative -top-7 ">
+                        <div class="flex-col">
+                            <div
+                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
+                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
+                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <p>WE ARE <br />PASSIONATE</p>
+                        </div>
+
+                        <div class="flex-col  ">
+                            <div
+                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
+                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
+                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <p>HONEST<br />DEPENDABLE
+                            </p>
+                        </div>
+                        <div class="flex-col  ">
+                            <div
+                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
+                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
+                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <p>ALWAYS <br />IMPROVING</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex gap-8 w-full justify-center mt-[8.5rem] ">
+            <div class="  w-[367px] h-[296px] p-6 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                <div class="text-center flex-col  ">
+                    <div class="flex justify-center mb-[10px]">
+                        <img src="assets/update.svg" class="w-[70px] h-[75px]" alt="">
+                    </div>
+                    <p class="text-violet text-[26px] mb-4">Updated knowledge</p>
+                    <p class="text-[18px] text-grey1">They all live tidily together in teams. <br /> with your
+                        team and information
+                        in </p>
+                </div>
+            </div>
+            <div
+                class=" flex-col justify-center p-6 items-center card w-[367px] h-[296px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                <div class="text-center flex-col ">
+                    <div class="flex justify-center mb-[10px]">
+                        <img src="assets/reliable.svg" class="w-[102px] h-[75px]" alt="">
+                    </div>
+                    <p class="text-violet text-[26px] mb-4">We are relaible</p>
+                    <p class="text-[18px] text-grey1">They all live tidily together in teams. <br /> with your
+                        team and information
+                        in </p>
+                </div>
+            </div>
+
+            <div
+                class=" flex-col justify-center p-6 items-center card w-[367px] h-[296px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                <div class="text-center flex-col ">
+                    <div class="flex justify-center mb-[10px]">
+                        <img src="assets/time.svg" class="w-[102px] h-[75px]" alt="">
+                    </div>
+                    <p class="text-violet text-[26px]  mb-4">Time mangement</p>
+                    <p class="text-[18px]  text-grey1">They all live tidily together in teams. <br /> with your
+                        team and information
+                        in </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[466px] bg-pink1 text-center -mt-20  flex flex-col justify-center items-center p-5 ">
+            <div class="felx-col justify-center items-center mt-12 ">
+                <p class="text-primary text-4xl mb-[17px] font-mullish font-bold ">OUR ACHIEVEMENTS</p>
+                <p class="text-primary text-[18px] mb-[27px] font-semibold">They all live tidily together in teams. with
+                    your team and
+                    information in wefocus<br /> on all round
+                    deveopment of individuals and part in co-curricular activities. </p>
+
+
+                <div class="flex justify-center gap-36 text-primary ">
+                    <div>
+                        <p class=" text-4xl font-bold">800</p>
+                        <p class="text-[14px] font-semibold">WORKING</p>
+                    </div>
+
+                    <div class="  font-bold">
+                        <p class=" text-4xl font-bold">975</p>
+                        <p class="text-[14px] font-semibold">COMPANY</p>
+                    </div>
+
+                    <div class=" font-bold">
+                        <p class=" text-4xl font-bold">738</p>
+                        <p class="text-[14px] font-semibold">COLLABORATES</p>
+                    </div>
+
+                    <div class="  font-bold">
+                        <p class=" text-4xl font-bold">564</p>
+                        <p class="text-[14px] font-semibold">PROJECTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="services" class="p-10 mt-[5rem]  w-full mx-auto flex flex-col gap-16">
+            <div class="flex flex-col items-center w-full mb-8">
+                <h1 class="text-5xl font-mullish font-medium text-violet text-center">WHAT DO WE DO</h1>
+                <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-3 mx-auto gap-[30px] ">
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
+                        <img src="./assets/coding.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Web design & development</p>
+                        <p class="text-[18px] text-[#495C76] ">We work with you to develop a user experience which
+                            delivers
+                            value to your
+                            audience. Value means repeat visits and referrals via social media and other channels. </p>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 mb-12 ">
+                        <img src="./assets/support.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Maintenance & support</p>
+                        <p class="text-[18px] text-[#495C76] ">Software maintenance and support services involve both
+                            appilication and product maintenance. </p>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
+                        <img src="./assets/mail.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Newsletters & landing page</p>
+                        <p class="text-[18px] text-[#495C76] ">A newsletter landing page is a really great way to stay
+                            engaged with your leads and stay on their minds and even increase your sales. </p>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
+                        <img src="./assets/content.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Content writing</p>
+                        <p class="text-[18px] text-[#495C76] ">Our content writers are experts at creating blog posts
+                            that boost SEO, engage readers, and promote social interaction. </p>
+                    </div>
+                </div>
+
+
+
+
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
+                        <img src="./assets/report.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Computer projects</p>
+                        <p class="text-[18px] text-[#495C76] ">We provide projects guidance for every academic course
+                            like diploma, BE, BTech in computer engineering. We do care about your project importance
+                            because once we were also the students. </p>
+                    </div>
+                </div>
+
+
+
+
+                <div
+                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
+                        <img src="./assets/design.svg " class="w-[105px] h-[112px]" />
+                        <p class="text-violet text-[26px]">Redesigning projects</p>
+                        <p class="text-[18px] text-[#495C76] ">We work with you to develop a user experience which
+                            delivers value to your audience. Value means repeat visits and referrals via social media
+                            and other channels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="w-full h-[670px] flex justify-between bg-pink1 mt-[150px] mb-20">
+            <img src="assets/mission.jpeg" class="w-[50%] h-[670px] object-cover" />
+            <div class="text-center w-[32rem] gap-9 flex flex-col items-center justify-center  mr-36">
+                <p class="text-4xl text-primary font-bold font-mullish">OUR MISSION</p>
+
+                <p class="text-primary text-center text-[18px]">
+                    We work with you to develop a user experience which delivers value to your audience. Value means
+                    repeat visits and referrals via social media and other channels.<br /><br />
+                    BE, BTech in computer engineering. We do care about your project importance because once we were
+                    also the students.
+                </p>
+
+                <button
+                    class="border-primary px-[30px] py-5 w-[170px] rounded-md border-solid border-[2px] text-white text-base bg-transparent">
+                    Get in touch
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div class="mt-40 p-14  ">
+            <div class="flex flex-col items-center w-full mb-24  ">
+                <h1 class="text-5xl font-mullish font-medium text-violet text-center">MEET OUR TEAM</h1>
+                <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+            </div>
+
+            <div class="flex justify-center gap-[30px] ">
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
+                            <img src="./assets/team1.jpeg" class="w-full h-full object-cover object-top" />
+                        </div>
+
+
+                        <div class="p-5 flex flex-col gap-5 ">
+                            <div>
+                                <p class="text-[24px] text-violet font-mullish font-semibold">Rachel Barlet</p>
+                                <p class="text-grey1 text-[14px]">Front end developer</p>
+                            </div>
+
+                            <p class="text-grey1 text-base font-400 text-justify">They way doctors treat urinary tract
+                                infections may be wrong, and antibiotic resistance is
+                                growing</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
+                            <img src="./assets/team2.jpeg" class="w-full h-full object-cover object-top" />
+                        </div>
+
+
+                        <div class="p-5 flex flex-col gap-5 ">
+                            <div>
+                                <p class="text-[24px] text-violet font-mullish font-semibold">Rachel Barlet</p>
+                                <p class="text-grey1 text-[14px]">Front end developer</p>
+                            </div>
+
+                            <p class="text-grey1 text-base font-400 text-justify">Treating customers with respect earns
+                                loyalty. Dig into marketing personas that reflect real people to gain the most
+                                growing</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
+                            <img src="./assets/team3.jpeg" class="w-full h-full object-cover object-top" />
+                        </div>
+
+
+                        <div class="p-5 flex flex-col gap-5 ">
+                            <div>
+                                <p class="text-[24px] text-violet font-mullish font-semibold">Rachel Barlet</p>
+                                <p class="text-grey1 text-[14px]">Front end developer</p>
+                            </div>
+
+                            <p class="text-grey1 text-base font-400 text-justify">Treating customers with respect earns
+                                you loyalty. Dig into marketing personas that reflect real people to.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
+                            <img src="./assets/team4.jpeg" class="w-full h-full object-cover object-top" />
+                        </div>
+
+
+                        <div class="p-5 flex flex-col gap-5 ">
+                            <div>
+                                <p class="text-[24px] text-violet font-mullish font-semibold">Rachel Barlet</p>
+                                <p class="text-grey1 text-[14px]">Front end developer</p>
+                            </div>
+
+                            <p class="text-grey1 text-base font-400 text-justify ">They way doctors treat urinary tract
+                                infections may be wrong, and antibiotic resistance is growing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="mt-[92px] p-14 ">
+            <div class="flex flex-col items-center w-full mb-24  ">
+                <h1 class="text-5xl font-mullish font-medium text-violet text-center">WHAT PEOPLE SAY ABOUT US</h1>
+                <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+            </div>
+
+            <div class="flex justify-center gap-[30px] text-grey1 ">
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
+
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
+                            nibh ioxulis.</p>
+
+
+                            <div class="flex items-center gap-3 " >
+                                <img  src="assets/profile1.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                                <div>
+                                    <p class="text-[18px] font-semibold " >Amy Goldsberg</p>
+                                    <p  class="text-[14px] font-400 " >CEO at Coca Cola</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
+
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
+                            nibh ioxulis.</p>
+
+
+                            <div class="flex items-center gap-3 " >
+                                <img  src="assets/profile2.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                                <div>
+                                    <p class="text-[18px] font-semibold " >John Paul Buchik</p>
+                                    <p  class="text-[14px] font-400 " >CEO at Buchik Paul</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
+
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
+                            nibh ioxulis.</p>
+
+
+                            <div class="flex items-center gap-3 " >
+                                <img  src="assets/profile3.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                                <div>
+                                    <p class="text-[18px] font-semibold " >John Jandali</p>
+                                    <p  class="text-[14px] font-400 " >CEO at Pappu NFT</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
+
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
+                            nibh ioxulis.</p>
+
+
+                            <div class="flex items-center gap-3 " >
+                                <img  src="assets/profile4.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                                <div>
+                                    <p class="text-[18px] font-semibold " >Lina Sloan</p>
+                                    <p  class="text-[14px] font-400 " >CEO at Jimpak Chipak</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="w-full h-[396px] flex flex-col items-center gap-8 bg-[#F64C72] mt-[229px]">
+            <p class="text-white text-[48px] mt-[64px]  ">WANT TO WORK WITH US</p>
+            <p class="text-center w-[764px] h-[99px] text-white leading-6 text-[20px] font-400 ">
+                They way doctors treat injury infections may n wrong and antibiotic resistance is growing to cure the
+                disease. Have project in mind shoot us an email at technofevers@email.com
+            </p>
+            <input type="text" placeholder="Email" class="px-3 py-2 border-2 h-[40px] w-[270px] rounded-md text-[20px]">
+        </div>
+        <!-- footer    -->
+        <div class="w-full h-[220px] flex justify-between items-center">
+            <div class="pl-[140px]">
+                <p class="text-[14px] text-violet">
+                    @ copyright technoFevers.com
+                </p>
+                <p class="text-[14px] text-violet">
+                    All rights reserved
+                </p>
+            </div>
+            <div class="pr-[82px]">
+                <div class="pl-[140px]">
+                    <img src="assets/footer.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
