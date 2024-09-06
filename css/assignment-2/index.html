@@ -21,7 +21,7 @@
                         pink1: '#F64C72',
                         violet: "#553d67",
                         primary: "#fff",
-                        grey1: "#6D7D8B" 
+                        grey1: "#6D7D8B"
                     },
                     fontFamily: {
                         opensans: ["Open Sans", "normal"],
@@ -29,7 +29,12 @@
                     },
                     backgroundImage: {
                         herobg: "url('./assets/hero-bg.jpeg')",
-                    }
+                    },
+                    screens: {
+                        xs: "300px",
+                        md: "900px",
+                        lg: "1200px",
+                    },
                 }
             }
         }
@@ -80,7 +85,7 @@
 
                 </div>
 
-                <div class="flex gap-[20px] mt-12 z-2">
+                <div class="flex md:flex-row xs:flex-col items-center gap-[20px] mt-12 z-2">
                     <input class="w-[320px] p-5 h-[56px] border-[#bbc8d4] border-[2px] rounded-md" placeholder="Email"
                         type="text" />
                     <button class="w-[165px] h-[56px] rounded rounded-md bg-pink1 text-primary font-semibold">Get in
@@ -90,75 +95,54 @@
         </div>
 
 
-        <div id="about" class="relative w-full flex justify-center -mt-[60px] p-5 z-20 text-grey1">
-            <div class="bg-primary w-[961px] h-[634px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] p-10">
-                <div class="flex flex-col items-center w-full mb-8">
-                    <h1 class="text-5xl font-mullish font-medium text-violet text-center">ABOUT US</h1>
-                    <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+   <!-- About us -->
+        <div class="relative w-full min-h-screen flex justify-center lg:mt-0 xs:-mt-[145px] items-center">
+            <div class="lg:w-[961px] xs:w-screen min-h-[575px] xs:min-h-[634px]  lg:absolute   lg:-top-[70px] bg-white shadow-2xl z-[5] flex flex-col gap-8 items-center">
+                <div class="flex flex-col items-center justify-center"> 
+                    <span  class="text-[48px] mt-5 text-[#553D67] font-opensans" >ABOUT US</span>
+                    <div class="w-[156px] h-[3px] mt-2 rounded bg-[#F64C72]"></div>
                 </div>
-
-                <div class="w-full text-center w-[700px] mx-auto  ">
-                    <p class="text-lg mb-6">
-                        TechnoFevers is a full-service software development company that specializes <br /> in
-                        developing complex web
-                        solutions. We are focused on designing and developing <br /> customer-centric products and
-                        applications for startups
-                        to elite business <br /> groups across the globe.
-                    </p>
-                    <p class="text-lg">
-                        We build the foundation for cognitive business by working with complex technologies and rapidly
-                        evolving
-                        business environments to offer project performance optimization.
-                    </p>
+                <div class="md:w-[700px] flex flex-col justify-between text-center px-8  ">
+                        <span class="text-[#553D67] text-[16px] xs:text-[18px] p-4 leading-6 ">
+                            TechnoFevers is a full service software development company that specializes in developing complex web solutions. We are focused on designing and developing  customer-centric products and applications for startups to elite business  groups across the globe.
+                        </span>
+                        <span class="text-[#553D67] text-[16px] xs:text-[18px] p-4 leading-6 ">
+                            We build the foundation for cognitive business by working with complex technologies and rapidly evolving business environment to offer project performance optimization.
+                        </span>
                 </div>
-
-
-                <div class="w-[720px] mx-auto mt-[45px] p-5 flex-col    ">
-                    <div class="bg-violet h-[1px] w-[100%]"></div>
-
-                    <div class="flex w-[79%] justify-between justify-between mx-auto relative -top-7 ">
-                        <div class="flex-col">
-                            <div
-                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
-                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
-                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
-                                </svg>
-                            </div>
-                            <p>WE ARE <br />PASSIONATE</p>
+              
+                <div class="px-4 hidden xs:block w-full md:w-[864px] h-[120px]">
+                    <div class="w-full  h-[1px] rounded bg-[#553D67] rounded-xl "></div>
+                    <div class="flex justify-between px-8" style="transform: translateY(-25px);">
+                        <div class="w-[50px] h-[50px] rounded-[50%] bg-white relative flex justify-center items-center border-2 border-black">
+                            <img src="assets/checkmark.svg" alt="">
+                            <span class="absolute text-[#6D7D8B] top-14 left-1 w-[108px]">
+                                WE ARE
+                                PASSIONATE
+                            </span>
                         </div>
-
-                        <div class="flex-col  ">
-                            <div
-                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
-                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
-                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
-                                </svg>
-                            </div>
-                            <p>HONEST<br />DEPENDABLE
-                            </p>
+                        <div class="w-[50px] h-[50px] rounded-[50%] bg-white flex relative justify-center items-center border-2 border-black">
+                            <img src="assets/checkmark.svg" alt="">
+                            <span class="absolute text-[#6D7D8B] top-14 left-1 w-[108px]">
+                                HONEST
+                                DEPENDABLE
+                            </span>
                         </div>
-                        <div class="flex-col  ">
-                            <div
-                                class="w-[49px] bg-primary flex justify-center items-center h-[49px] rounded-full border-violet border-[1px] mb-[10px]">
-                                <svg width="31px" height="19px" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 10.8571L3 7.85714L2.5 8.35714L6 12L14 4L13.5 3.5L6 10.8571Z"
-                                        fill="#F64C72" stroke="#F64C72" stroke-width="3" />
-                                </svg>
-                            </div>
-                            <p>ALWAYS <br />IMPROVING</p>
+                        <div class="w-[50px] h-[50px] rounded-[50%] relative bg-white flex justify-center items-center border-2 border-black">
+                            <img src="assets/checkmark.svg" alt="">
+                            <span class="absolute text-[#6D7D8B] left-1 top-14  w-[108px]">
+                                ALWAYS
+                                    IMPROVING
+                            </span>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+
         </div>
 
-
-        <div class="flex gap-8 w-full justify-center mt-[8.5rem] ">
+        <div class="flex xs:flex-col  md:p-2 xs:items-center md:flex-row gap-8 w-full justify-center lg:-mt-[125px] ">
             <div class="  w-[367px] h-[296px] p-6 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
                 <div class="text-center flex-col  ">
                     <div class="flex justify-center mb-[10px]">
@@ -197,131 +181,114 @@
             </div>
         </div>
 
-        <div class="w-full h-[466px] bg-pink1 text-center -mt-20  flex flex-col justify-center items-center p-5 ">
-            <div class="felx-col justify-center items-center mt-12 ">
+        <div
+            class="w-full md:h-[466px] xs:h-[654px]    bg-pink1 text-center -mt-20  flex flex-col justify-center items-center p-5 ">
+            <div class="felx-col justify-center items-center md:mt-12 xs:mt-16 ">
                 <p class="text-primary text-4xl mb-[17px] font-mullish font-bold ">OUR ACHIEVEMENTS</p>
-                <p class="text-primary text-[18px] mb-[27px] font-semibold">They all live tidily together in teams. with
-                    your team and
-                    information in wefocus<br /> on all round
-                    deveopment of individuals and part in co-curricular activities. </p>
+                <p class="text-primary md:w-[696px] xs:w-[294px] text-[18px] mb-[27px] mx-auto font-semibold">They all
+                    live tidily together
+                    in teams. with your team and information in wefocus on all round deveopment of individuals and part
+                    in co-curricular activities. </p>
 
 
-                <div class="flex justify-center gap-36 text-primary ">
+                <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-10 md:gap-36 text-primary">
                     <div>
-                        <p class=" text-4xl font-bold">800</p>
+                        <p class="text-4xl font-bold">800</p>
                         <p class="text-[14px] font-semibold">WORKING</p>
                     </div>
 
-                    <div class="  font-bold">
-                        <p class=" text-4xl font-bold">975</p>
+                    <div>
+                        <p class="text-4xl font-bold">975</p>
                         <p class="text-[14px] font-semibold">COMPANY</p>
                     </div>
 
-                    <div class=" font-bold">
-                        <p class=" text-4xl font-bold">738</p>
+                    <div>
+                        <p class="text-4xl font-bold">738</p>
                         <p class="text-[14px] font-semibold">COLLABORATES</p>
                     </div>
 
-                    <div class="  font-bold">
-                        <p class=" text-4xl font-bold">564</p>
+                    <div>
+                        <p class="text-4xl font-bold">564</p>
                         <p class="text-[14px] font-semibold">PROJECTS</p>
                     </div>
                 </div>
+
             </div>
         </div>
 
 
-
-        <div id="services" class="p-10 mt-[5rem]  w-full mx-auto flex flex-col gap-16">
+        
+        <div id="services" class="p-10 mt-[5rem] w-full mx-auto flex flex-col gap-16">
             <div class="flex flex-col items-center w-full mb-8">
-                <h1 class="text-5xl font-mullish font-medium text-violet text-center">WHAT DO WE DO</h1>
+                <h1 class="md:text-5xl xs:text-[20px] font-mullish font-medium text-violet text-center">WHAT DO WE DO
+                </h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
             </div>
 
-            <div class="grid grid-cols-3 mx-auto gap-[30px] ">
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
-                        <img src="./assets/coding.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Web design & development</p>
-                        <p class="text-[18px] text-[#495C76] ">We work with you to develop a user experience which
-                            delivers
-                            value to your
-                            audience. Value means repeat visits and referrals via social media and other channels. </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mx-auto justify-items-center">
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3">
+                        <img src="./assets/coding.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Web design & development</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We work with you to develop a user experience which delivers value to your audience. Value means repeat visits and referrals via social media and other channels.</p>
                     </div>
                 </div>
-
-
-
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 mb-12 ">
-                        <img src="./assets/support.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Maintenance & support</p>
-                        <p class="text-[18px] text-[#495C76] ">Software maintenance and support services involve both
-                            appilication and product maintenance. </p>
+            
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 mb-12">
+                        <img src="./assets/support.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Maintenance & support</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Software maintenance and support services involve both application and product maintenance.</p>
                     </div>
                 </div>
-
-
-
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
-                        <img src="./assets/mail.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Newsletters & landing page</p>
-                        <p class="text-[18px] text-[#495C76] ">A newsletter landing page is a really great way to stay
-                            engaged with your leads and stay on their minds and even increase your sales. </p>
+            
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3">
+                        <img src="./assets/mail.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Newsletters & landing page</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">A newsletter landing page is a great way to stay engaged with your leads and increase your sales.</p>
                     </div>
                 </div>
-
-
-
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
-                        <img src="./assets/content.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Content writing</p>
-                        <p class="text-[18px] text-[#495C76] ">Our content writers are experts at creating blog posts
-                            that boost SEO, engage readers, and promote social interaction. </p>
+            
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3">
+                        <img src="./assets/content.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Content writing</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Our content writers are experts at creating blog posts that boost SEO, engage readers, and promote social interaction.</p>
                     </div>
                 </div>
-
-
-
-
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
-                        <img src="./assets/report.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Computer projects</p>
-                        <p class="text-[18px] text-[#495C76] ">We provide projects guidance for every academic course
-                            like diploma, BE, BTech in computer engineering. We do care about your project importance
-                            because once we were also the students. </p>
+            
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3">
+                        <img src="./assets/report.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Computer projects</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We provide project guidance for academic courses like diploma, BE, BTech in computer engineering.</p>
                     </div>
                 </div>
-
-
-
-
-                <div
-                    class="flex flex-col justify-center items-center card w-[367px] h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                    <div class="text-center flex flex-col items-center gap-5 p-3 ">
-                        <img src="./assets/design.svg " class="w-[105px] h-[112px]" />
-                        <p class="text-violet text-[26px]">Redesigning projects</p>
-                        <p class="text-[18px] text-[#495C76] ">We work with you to develop a user experience which
-                            delivers value to your audience. Value means repeat visits and referrals via social media
-                            and other channels.</p>
+            
+                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3">
+                        <img src="./assets/design.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Redesigning projects</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We develop a user experience that delivers value to your audience, ensuring repeat visits and referrals via social media.</p>
                     </div>
                 </div>
             </div>
+            
         </div>
 
 
 
-        <div class="w-full h-[670px] flex justify-between bg-pink1 mt-[150px] mb-20">
-            <img src="assets/mission.jpeg" class="w-[50%] h-[670px] object-cover" />
-            <div class="text-center w-[32rem] gap-9 flex flex-col items-center justify-center  mr-36">
+
+
+
+        <div class="w-full h-[670px] flex flex-col md:flex-row justify-between  bg-pink1 mt-[150px] mb-20">
+ 
+            <img src="assets/mission.jpeg" class="hidden md:block w-[50%] h-[670px] object-cover" />
+
+             
+            <div
+                class="text-center w-full md:w-[588px] xs:w-[316px] gap-9 p-8 flex flex-col items-center my-auto justify-center mx-auto">
                 <p class="text-4xl text-primary font-bold font-mullish">OUR MISSION</p>
 
                 <p class="text-primary text-center text-[18px]">
@@ -332,7 +299,7 @@
                 </p>
 
                 <button
-                    class="border-primary px-[30px] py-5 w-[170px] rounded-md border-solid border-[2px] text-white text-base bg-transparent">
+                    class="border-primary px-[30px] py-5 w-[212px] rounded-md border-solid border-[2px] text-white text-base bg-transparent">
                     Get in touch
                 </button>
             </div>
@@ -341,16 +308,19 @@
 
 
 
-        <div class="mt-40 p-14  ">
+
+
+        <div class=" xs:mt-[88px] md:mt-40 p-14  ">
             <div class="flex flex-col items-center w-full mb-24  ">
                 <h1 class="text-5xl font-mullish font-medium text-violet text-center">MEET OUR TEAM</h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
             </div>
 
-            <div class="flex justify-center gap-[30px] ">
+            <div class="flex flex-wrap justify-center gap-[30px] ">
 
                 <div class="flex w-[337px] h-[468px]">
-                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
                             <img src="./assets/team1.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
@@ -371,7 +341,8 @@
 
 
                 <div class="flex w-[337px] h-[468px]">
-                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
                             <img src="./assets/team2.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
@@ -393,7 +364,8 @@
 
 
                 <div class="flex w-[337px] h-[468px]">
-                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
                             <img src="./assets/team3.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
@@ -414,7 +386,8 @@
 
 
                 <div class="flex w-[337px] h-[468px]">
-                    <div class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
                             <img src="./assets/team4.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
@@ -437,31 +410,33 @@
 
 
 
-        <div class="mt-[92px] p-14 ">
-            <div class="flex flex-col items-center w-full mb-24  ">
-                <h1 class="text-5xl font-mullish font-medium text-violet text-center">WHAT PEOPLE SAY ABOUT US</h1>
+        <div class="md:mt-[92px] xs:mt-[89px]       ">
+            <div class="flex flex-col  items-center w-full mb-24  ">
+                <h1 class="md:text-5xl xs:text-[30px] font-mullish xs:font-400 md:font-medium text-violet text-center">
+                    WHAT PEOPLE SAY ABOUT US</h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
             </div>
 
-            <div class="flex justify-center gap-[30px] text-grey1 ">
+            <div class="flex  justify-center gap-[30px] text-grey1 flex-wrap ">
 
                 <div class="flex w-[337px] h-[468px]">
                     <div
                         class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
                         <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
 
-                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
+                            cubile easus
                             senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
                             nibh ioxulis.</p>
 
 
-                            <div class="flex items-center gap-3 " >
-                                <img  src="assets/profile1.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
-                                <div>
-                                    <p class="text-[18px] font-semibold " >Amy Goldsberg</p>
-                                    <p  class="text-[14px] font-400 " >CEO at Coca Cola</p>
-                                </div>
+                        <div class="flex items-center gap-3 ">
+                            <img src="assets/profile1.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                            <div>
+                                <p class="text-[18px] font-semibold ">Amy Goldsberg</p>
+                                <p class="text-[14px] font-400 ">CEO at Coca Cola</p>
                             </div>
+                        </div>
 
                     </div>
                 </div>
@@ -472,41 +447,19 @@
                         class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
                         <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
 
-                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
+                            cubile easus
                             senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
                             nibh ioxulis.</p>
 
 
-                            <div class="flex items-center gap-3 " >
-                                <img  src="assets/profile2.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
-                                <div>
-                                    <p class="text-[18px] font-semibold " >John Paul Buchik</p>
-                                    <p  class="text-[14px] font-400 " >CEO at Buchik Paul</p>
-                                </div>
+                        <div class="flex items-center gap-3 ">
+                            <img src="assets/profile2.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                            <div>
+                                <p class="text-[18px] font-semibold ">John Paul Buchik</p>
+                                <p class="text-[14px] font-400 ">CEO at Buchik Paul</p>
                             </div>
-
-                    </div>
-                </div>
-
-
-
-                <div class="flex w-[337px] h-[468px]">
-                    <div
-                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
-                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
-
-                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
-                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
-                            nibh ioxulis.</p>
-
-
-                            <div class="flex items-center gap-3 " >
-                                <img  src="assets/profile3.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
-                                <div>
-                                    <p class="text-[18px] font-semibold " >John Jandali</p>
-                                    <p  class="text-[14px] font-400 " >CEO at Pappu NFT</p>
-                                </div>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -518,18 +471,43 @@
                         class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
                         <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
 
-                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of cubile easus
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
+                            cubile easus
                             senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
                             nibh ioxulis.</p>
 
 
-                            <div class="flex items-center gap-3 " >
-                                <img  src="assets/profile4.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
-                                <div>
-                                    <p class="text-[18px] font-semibold " >Lina Sloan</p>
-                                    <p  class="text-[14px] font-400 " >CEO at Jimpak Chipak</p>
-                                </div>
+                        <div class="flex items-center gap-3 ">
+                            <img src="assets/profile3.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                            <div>
+                                <p class="text-[18px] font-semibold ">John Jandali</p>
+                                <p class="text-[14px] font-400 ">CEO at Pappu NFT</p>
                             </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex w-[337px] h-[468px]">
+                    <div
+                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
+
+                        <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
+                            cubile easus
+                            senectious various socis suspendecious integer suspendise tutpris serectum perefectureque
+                            nibh ioxulis.</p>
+
+
+                        <div class="flex items-center gap-3 ">
+                            <img src="assets/profile4.jpeg" class="w-[56px] h-[56px] rounded-[50%] object-cover " />
+                            <div>
+                                <p class="text-[18px] font-semibold ">Lina Sloan</p>
+                                <p class="text-[14px] font-400 ">CEO at Jimpak Chipak</p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -538,30 +516,36 @@
         </div>
 
 
-        <div class="w-full h-[396px] flex flex-col items-center gap-8 bg-[#F64C72] mt-[229px]">
-            <p class="text-white text-[48px] mt-[64px]  ">WANT TO WORK WITH US</p>
-            <p class="text-center w-[764px] h-[99px] text-white leading-6 text-[20px] font-400 ">
+        <div
+            class="  xs:h-[532px] min-w-screen md:h-[396px] flex flex-col items-center xs:justify-center md:justify-start xs:gap-5 md:gap-8 bg-pink1 xs:mt-[155px] md:mt-[229px]">
+            <p class="text-white  xs:text-[37px] xs:text-center xs:text-[37px]  md:text-[48px]  md:mt-[63px]  ">WANT TO
+                WORK WITH US</p>
+            <p class="text-center md:w-[764px] xs:w-[320px] h-[99px] text-white leading-6   md:text-[20px] font-400 ">
                 They way doctors treat injury infections may n wrong and antibiotic resistance is growing to cure the
                 disease. Have project in mind shoot us an email at technofevers@email.com
             </p>
-            <input type="text" placeholder="Email" class="px-3 py-2 border-2 h-[40px] w-[270px] rounded-md text-[20px]">
+            <input type="text" placeholder="Email"
+                class="px-3 py-2 xs:mt-12 md:mt-0 border-2 h-[40px] w-[270px] rounded-sm text-[20px]">
         </div>
-        <!-- footer    -->
-        <div class="w-full h-[220px] flex justify-between items-center">
-            <div class="pl-[140px]">
-                <p class="text-[14px] text-violet">
+
+ 
+        <div
+            class="w-full h-[220px] flex flex-col xs:flex-row justify-center gap-[32px] xs:justify-between items-center">
+            <div class=" xs:pl-[10px] md:pl-[140px]">
+                <p class="text-[14px] text-[#553D67]">
                     @ copyright technoFevers.com
                 </p>
-                <p class="text-[14px] text-violet">
+                <p class="text-[14px] text-[#553D67]">
                     All rights reserved
                 </p>
             </div>
-            <div class="pr-[82px]">
-                <div class="pl-[140px]">
+            <div class="md:pr-[82px]">
+                <div class="w-[163px] xs:[245px]">
                     <img src="assets/footer.svg" alt="">
                 </div>
             </div>
         </div>
+
 
     </div>
 </body>
