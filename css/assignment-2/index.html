@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./technofevers.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,308 +32,352 @@
                         herobg: "url('./assets/hero-bg.jpeg')",
                     },
                     screens: {
-                        xs: "300px",
-                        md: "900px",
-                        lg: "1200px",
-                    },
+                        xs: '365px',
+                        md: '900px',
+                        lg: '1200px'
+                    }
                 }
             }
         }
     </script>
-    <title>CSS Assignment 2</title>
+    <title>TechnoFevers</title>
 </head>
 
-<body class="w-full h-full font-opensans ">
-    <div class="min-h-screen w-full">
-        <header class="w-full flex flex-col items-center justify-center  mb-[35px]">
-            <div class="header-logo flex flex-col items-center mb-8">
-                <img src="./assets/header-logo.svg" alt="header-logo" class="w-[7.5rem] h-[7.5rem]" />
-                <p class="text-lg font-semibold -mt-4 font-mullish">
-                    <span class="text-pink1">TECHNO</span><span class="text-violet">FEVERS</span>
-                </p>
+<body>
+    <div class="w-screen h-screen overflow-x-hidden">
+
+        
+        <div class="w-full h-[92px] mt-[10px] xs:h-[227px] flex xs:flex-col justify-between  items-center">
+            <div class=" xs:w-[145px] xs:h-[145px] ml-4 mb-[25px]">
+                <div class="w-[120x] h-[120px]">
+                    <img src="./assets/header-logo.svg" alt="header-logo" class="w-[7.5rem] h-[7.5rem]" />
+                    <p class="text-lg font-semibold -mt-4 font-mullish">
+                        <span class="text-pink1">TECHNO</span><span class="text-violet">FEVERS</span>
+                    </p>
+                </div>
             </div>
 
-            <nav class="header-nav text-xl text-violet flex gap-11">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#">Team</a>
-                <a href="#">Contact Us</a>
+
+            <nav class="hidden xs:flex mb-[40px] ">
+                <nav class="header-nav font-opensans text-[14px] md:text-[20px] text-violet flex gap-11">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact Us</a>
+                </nav>
             </nav>
-        </header>
+            <nav class=" xs:hidden">
+                <img src="assets/menu.svg" alt="">
+            </nav>
+        </div>
 
 
-        <div class="relative w-full h-[583px] flex items-center justify-center z-2">
-
-            <div class="absolute inset-0 bg-herobg bg-cover bg-center"></div>
-
-            <div class="absolute inset-0 bg-[#6D5357] bg-opacity-50"></div>
 
 
-            <div class="relative flex-col z-10">
 
-                <div class="text-center text-primary z-2">
-                    <h1 class="font-mullish text-[48px] font-bold"><span>Instant collaboration </span></h1>
-                    <h1 class="font-mullish text-[48px] font-bold"> for productive projects</h1>
-
-                    <div class="mt-[15px] z-2">
-                        <h1 class="font-mullish text-base font-bold">
-                            <span>We are full-service software company that specilizes in </span>
-                        </h1>
-                        <h1 class="font-mullish text-base font-bold">in developing complex web solutions</h1>
+         
+        <div class="relative overflow-hidden">
+            <img src="assets/hero-bg.jpeg" class="w-full h-[583px] object-cover" alt="Background Image">
+            <div class="absolute h-full inset-0 z-[2]" style="background-color: rgba(109, 83, 87, 0.5);">
+                <div class="flex flex-col items-center gap-[10px] h-full p-8 space-y-6">
+                    <div class="text-center flex flex-col w-full space-y-4">
+                        <span
+                            class="block font-semibold mt-[75px] text-wrap text-white  text-[40px] xs:text-[48px] leading-normal xs:leading-[70px]">
+                            Instant collaboration <br>
+                            for productive projects
+                        </span>
+                        <span class=" font-medium text-white text-[16px]  md:text-[18px] w-full mx-auto">
+                            We are a full-service software company that specializes <br>
+                            in developing complex web solutions
+                        </span>
+                    </div>
+                    <div class="flex flex-col  sm:flex-row gap-[20px] xs:space-y-0 space-y-4">
+                        <input type="text" class="xs:w-[320px] w-[300px] h-[51px] md:h-[56px] p-1 px-3 border-2 rounded"
+                            placeholder="Enter">
+                        <button
+                            class="px-auto rounded text-white xs:w-[165px] w-[156px] h-[51px] md:h-[56px] font-bold bg-[#F64C72]">
+                            Get in touch
+                        </button>
                     </div>
 
-
-                </div>
-
-                <div class="flex md:flex-row xs:flex-col items-center gap-[20px] mt-12 z-2">
-                    <input class="w-[320px] p-5 h-[56px] border-[#bbc8d4] border-[2px] rounded-md" placeholder="Email"
-                        type="text" />
-                    <button class="w-[165px] h-[56px] rounded rounded-md bg-pink1 text-primary font-semibold">Get in
-                        touch</button>
                 </div>
             </div>
         </div>
 
 
-   <!-- About us -->
-        <div class="relative w-full min-h-screen flex justify-center lg:mt-0 xs:-mt-[145px] items-center">
-            <div class="lg:w-[961px] xs:w-screen min-h-[575px] xs:min-h-[634px]  lg:absolute   lg:-top-[70px] bg-white shadow-2xl z-[5] flex flex-col gap-8 items-center">
-                <div class="flex flex-col items-center justify-center"> 
-                    <span  class="text-[48px] mt-5 text-[#553D67] font-opensans" >ABOUT US</span>
+         
+
+        <div id="about" class="relative w-full h-[700px] flex justify-center items-center">
+            <div
+                class="md:w-[961px] w-full min-h-[575px] xs:h-[634px] shadow-[0px_10px_15px_0px_rgba(126,97,97,0.25)] py-10 md:absolute  md:-top-[70px] bg-white z-[5] flex flex-col gap-8 items-center">
+                <div class="flex flex-col items-center justify-center items-center">
+                    <span class="text-[48px] text-[#553D67] font-opensans">ABOUT US</span>
                     <div class="w-[156px] h-[3px] mt-2 rounded bg-[#F64C72]"></div>
                 </div>
-                <div class="md:w-[700px] flex flex-col justify-between text-center px-8  ">
-                        <span class="text-[#553D67] text-[16px] xs:text-[18px] p-4 leading-6 ">
-                            TechnoFevers is a full service software development company that specializes in developing complex web solutions. We are focused on designing and developing  customer-centric products and applications for startups to elite business  groups across the globe.
-                        </span>
-                        <span class="text-[#553D67] text-[16px] xs:text-[18px] p-4 leading-6 ">
-                            We build the foundation for cognitive business by working with complex technologies and rapidly evolving business environment to offer project performance optimization.
-                        </span>
+                <div class="md:w-[700px]  flex flex-col justify-between text-center px-8  ">
+                    <span class="text-[#6D7D8B] text-[16px] xs:text-[18px] p-4 leading-6 ">
+                        TechnoFevers is a full service software development company that specializes in developing
+                        complex web solutions. We are focused on designing and developing customer-centric products and
+                        applications for startups to elite business groups across the globe.
+                    </span>
+                    <span class="text-[#6D7D8B] text-[16px] xs:text-[18px] p-4 leading-6 ">
+                        We build the foundation for cognitive business by working with complex technologies and rapidly
+                        evolving business environment to offer project performance optimization.
+                    </span>
                 </div>
-              
-                <div class="px-4 hidden xs:block w-full md:w-[864px] h-[120px]">
+            
+                <div class="px-4 hidden  mt-[15px] sm:block w-full md:w-[864px] h-[120px]">
                     <div class="w-full  h-[1px] rounded bg-[#553D67] rounded-xl "></div>
                     <div class="flex justify-between px-8" style="transform: translateY(-25px);">
-                        <div class="w-[50px] h-[50px] rounded-[50%] bg-white relative flex justify-center items-center border-2 border-black">
+                        <div
+                            class="w-[50px] h-[50px] rounded-[50%] bg-white relative flex justify-center items-center border-2 border-black">
                             <img src="assets/checkmark.svg" alt="">
-                            <span class="absolute text-[#6D7D8B] top-14 left-1 w-[108px]">
+                            <span class="absolute leading-6 text-[#6D7D8B] top-14 left-0 w-[108px]">
                                 WE ARE
                                 PASSIONATE
                             </span>
                         </div>
-                        <div class="w-[50px] h-[50px] rounded-[50%] bg-white flex relative justify-center items-center border-2 border-black">
+                        <div
+                            class="w-[50px] h-[50px] rounded-[50%] bg-white flex relative justify-center items-center border-2 border-black">
                             <img src="assets/checkmark.svg" alt="">
-                            <span class="absolute text-[#6D7D8B] top-14 left-1 w-[108px]">
+                            <span class="absolute leading-6 text-[#6D7D8B] top-14 left-0 w-[108px]">
                                 HONEST
                                 DEPENDABLE
                             </span>
                         </div>
-                        <div class="w-[50px] h-[50px] rounded-[50%] relative bg-white flex justify-center items-center border-2 border-black">
+                        <div
+                            class="w-[50px] h-[50px] rounded-[50%] relative bg-white flex justify-center items-center border-2 border-black">
                             <img src="assets/checkmark.svg" alt="">
-                            <span class="absolute text-[#6D7D8B] left-1 top-14  w-[108px]">
+                            <span class="absolute leading-6 text-[#6D7D8B] left-0 top-14  w-[108px]">
                                 ALWAYS
-                                    IMPROVING
+                                IMPROVING
                             </span>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
         </div>
 
-        <div class="flex xs:flex-col  md:p-2 xs:items-center md:flex-row gap-8 w-full justify-center lg:-mt-[125px] ">
-            <div class="  w-[367px] h-[296px] p-6 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                <div class="text-center flex-col  ">
-                    <div class="flex justify-center mb-[10px]">
+    
+
+        <div class="flex gap-[25px] xs:gap-6  w-full flex-col md:flex-row justify-center items-center ">
+            <div class="flex-col justify-center  items-center card w-[303px]  shadow-[0px_10px_15px_0px_#06000040] mt-[20px] xs:w-[367px] h-[296px] 
+                bg-primary ">
+                <div class="text-center flex-col">
+                    <div class="flex justify-center mt-[40px] mb-[10px]">
                         <img src="assets/update.svg" class="w-[70px] h-[75px]" alt="">
                     </div>
-                    <p class="text-violet text-[26px] mb-4">Updated knowledge</p>
-                    <p class="text-[18px] text-grey1">They all live tidily together in teams. <br /> with your
-                        team and information
+                    <p class="text-violet text-[26px] mt-[16px] h-[46px] p-auto">Updated knowledge</p>
+                    <p class="text-[18px] mt-4 text-[#495C76B4]">They all live tidily together in teams. <br /> with
+                        your team and information
                         in </p>
                 </div>
             </div>
-            <div
-                class=" flex-col justify-center p-6 items-center card w-[367px] h-[296px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                <div class="text-center flex-col ">
-                    <div class="flex justify-center mb-[10px]">
-                        <img src="assets/reliable.svg" class="w-[102px] h-[75px]" alt="">
+            <div class="flex-col justify-center  items-center card w-[303px]  shadow-[0px_10px_15px_0px_#06000040] mt-[20px] xs:w-[367px] h-[296px] 
+            bg-primary ">
+                <div class="text-center flex-col">
+                    <div class="flex justify-center mt-[40px] mb-[10px]">
+                        <img src="assets/reliable.svg" class="w-[70px] h-[75px]" alt="">
                     </div>
-                    <p class="text-violet text-[26px] mb-4">We are relaible</p>
-                    <p class="text-[18px] text-grey1">They all live tidily together in teams. <br /> with your
-                        team and information
+                    <p class="text-violet text-[26px] mt-[16px] h-[46px] p-auto">We are relaiblee</p>
+                    <p class="text-[18px] mt-4 text-[#495C76B4]">They all live tidily together in teams. <br /> with
+                        your team and information
                         in </p>
                 </div>
             </div>
 
-            <div
-                class=" flex-col justify-center p-6 items-center card w-[367px] h-[296px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary ">
-                <div class="text-center flex-col ">
-                    <div class="flex justify-center mb-[10px]">
-                        <img src="assets/time.svg" class="w-[102px] h-[75px]" alt="">
+            <div class="flex-col justify-center  items-center card w-[303px]  shadow-[0px_10px_15px_0px_#06000040] mt-[20px] xs:w-[367px] h-[296px] 
+        bg-primary ">
+                <div class="text-center flex-col">
+                    <div class="flex justify-center mt-[40px] mb-[10px]">
+                        <img src="assets/time.svg" class="w-[70px] h-[75px]" alt="">
                     </div>
-                    <p class="text-violet text-[26px]  mb-4">Time mangement</p>
-                    <p class="text-[18px]  text-grey1">They all live tidily together in teams. <br /> with your
-                        team and information
+                    <p class="text-violet text-[26px] mt-[16px] h-[46px] p-auto">Time mangement</p>
+                    <p class="text-[18px] mt-4 text-[#495C76B4]">They all live tidily together in teams. <br /> with
+                        your team and information
                         in </p>
                 </div>
             </div>
         </div>
 
-        <div
-            class="w-full md:h-[466px] xs:h-[654px]    bg-pink1 text-center -mt-20  flex flex-col justify-center items-center p-5 ">
-            <div class="felx-col justify-center items-center md:mt-12 xs:mt-16 ">
-                <p class="text-primary text-4xl mb-[17px] font-mullish font-bold ">OUR ACHIEVEMENTS</p>
-                <p class="text-primary md:w-[696px] xs:w-[294px] text-[18px] mb-[27px] mx-auto font-semibold">They all
-                    live tidily together
-                    in teams. with your team and information in wefocus on all round deveopment of individuals and part
-                    in co-curricular activities. </p>
+        <div class="w-full h-[466px]  bg-pink1 text-center -mt-[60px] flex flex-col justify-center items-center ">
+            <div class="felx-col justify-center items-center  sm:mt-0">
+                <p class="text-primary text-[30px] md:text-[40px] mt-[12px] mb-[17px] font-mullish font-bold ">OUR
+                    ACHIEVEMENTS</p>
+                <p class="text-primary text-[18px] mb-[24px] font-[400]">They all live tidily together in teams. with
+                    your team and
+                    information in we focus<br /> on all round
+                    deveopment of individuals and part in co-curricular activities. </p>
 
 
-                <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-10 md:gap-36 text-primary">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-[90px] text-primary ">
                     <div>
-                        <p class="text-4xl font-bold">800</p>
+                        <p class=" text-4xl font-bold mb-3">800</p>
                         <p class="text-[14px] font-semibold">WORKING</p>
                     </div>
 
-                    <div>
-                        <p class="text-4xl font-bold">975</p>
+                    <div class="  font-bold">
+                        <p class=" text-4xl font-bold mb-3">975</p>
                         <p class="text-[14px] font-semibold">COMPANY</p>
                     </div>
 
-                    <div>
-                        <p class="text-4xl font-bold">738</p>
+                    <div class=" font-bold">
+                        <p class=" text-4xl font-bold mb-3">738</p>
                         <p class="text-[14px] font-semibold">COLLABORATES</p>
                     </div>
 
-                    <div>
-                        <p class="text-4xl font-bold">564</p>
+                    <div class="  font-bold">
+                        <p class=" text-4xl font-bold mb-3">564</p>
                         <p class="text-[14px] font-semibold">PROJECTS</p>
                     </div>
                 </div>
-
             </div>
         </div>
+    
 
-
-        
-        <div id="services" class="p-10 mt-[5rem] w-full mx-auto flex flex-col gap-16">
+        <div id="services" class="p-10 mt-[3rem] w-full mx-auto flex flex-col">
             <div class="flex flex-col items-center w-full mb-8">
                 <h1 class="md:text-5xl xs:text-[20px] font-mullish font-medium text-violet text-center">WHAT DO WE DO
                 </h1>
-                <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
+                <div class="w-[156px] h-[3px] bg-pink1 mt-10"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mx-auto justify-items-center">
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
-                    <div class="text-center flex flex-col items-center gap-5 p-3">
-                        <img src="./assets/coding.svg" class="w-[105px] h-[112px]" />
-                        <p class="text-violet xs:text-[20px] md:text-[26px]">Web design & development</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We work with you to develop a user experience which delivers value to your audience. Value means repeat visits and referrals via social media and other channels.</p>
-                    </div>
-                </div>
-            
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+            <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-[30px] mx-auto justify-items-center">
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3 mb-12">
-                        <img src="./assets/support.svg" class="w-[105px] h-[112px]" />
+                        <img src="assets/coding.svg" class="w-[105px] h-[112px]" />
                         <p class="text-violet xs:text-[20px] md:text-[26px]">Maintenance & support</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Software maintenance and support services involve both application and product maintenance.</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Software maintenance and support services
+                            involve both application and product maintenance.</p>
                     </div>
                 </div>
-            
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                    <div class="text-center flex flex-col items-center gap-5 p-3 mb-12">
+                        <img src="assets/support.svg" class="w-[105px] h-[112px]" />
+                        <p class="text-violet xs:text-[20px] md:text-[26px]">Maintenance & support</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Software maintenance and support services
+                            involve both application and product maintenance.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3">
-                        <img src="./assets/mail.svg" class="w-[105px] h-[112px]" />
+                        <img src="assets/mail.svg" class="w-[105px] h-[112px]" />
                         <p class="text-violet xs:text-[20px] md:text-[26px]">Newsletters & landing page</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">A newsletter landing page is a great way to stay engaged with your leads and increase your sales.</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">A newsletter landing page is a great way
+                            to stay engaged with your leads and increase your sales.</p>
                     </div>
                 </div>
-            
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3">
-                        <img src="./assets/content.svg" class="w-[105px] h-[112px]" />
+                        <img src="assets/content.svg" class="w-[105px] h-[112px]" />
                         <p class="text-violet xs:text-[20px] md:text-[26px]">Content writing</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Our content writers are experts at creating blog posts that boost SEO, engage readers, and promote social interaction.</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Our content writers are experts at
+                            creating blog posts that boost SEO, engage readers, and promote social interaction.</p>
                     </div>
                 </div>
-            
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3">
-                        <img src="./assets/report.svg" class="w-[105px] h-[112px]" />
+                        <img src="assets/report.svg" class="w-[105px] h-[112px]" />
                         <p class="text-violet xs:text-[20px] md:text-[26px]">Computer projects</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We provide project guidance for academic courses like diploma, BE, BTech in computer engineering.</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We provide project guidance for academic
+                            courses like diploma, BE, BTech in computer engineering.</p>
                     </div>
                 </div>
-            
-                <div class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+
+                <div
+                    class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3">
-                        <img src="./assets/design.svg" class="w-[105px] h-[112px]" />
+                        <img src="assets/design.svg" class="w-[105px] h-[112px]" />
                         <p class="text-violet xs:text-[20px] md:text-[26px]">Redesigning projects</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We develop a user experience that delivers value to your audience, ensuring repeat visits and referrals via social media.</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We develop a user experience that delivers
+                            value to your audience, ensuring repeat visits and referrals via social media.</p>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
+         <div class="w-[100%] h-[670px] flex md:justify-between justify-center items-center bg-pink1 md:mt-20 mb-10 ">
+            <img src="assets/mission.jpeg" class="hidden md:block w-[50%] h-full object-cover" />
+            <div class="text-center  ml-[30px] flex flex-col gap-5 items-center justify-between">
+                <p class="text-[30px] xs:text-[45px] text-primary text-center font-bold font-mullish">OUR MISSION</p>
 
-
-
-
-
-        <div class="w-full h-[670px] flex flex-col md:flex-row justify-between  bg-pink1 mt-[150px] mb-20">
- 
-            <img src="assets/mission.jpeg" class="hidden md:block w-[50%] h-[670px] object-cover" />
-
-             
-            <div
-                class="text-center w-full md:w-[588px] xs:w-[316px] gap-9 p-8 flex flex-col items-center my-auto justify-center mx-auto">
-                <p class="text-4xl text-primary font-bold font-mullish">OUR MISSION</p>
-
-                <p class="text-primary text-center text-[18px]">
-                    We work with you to develop a user experience which delivers value to your audience. Value means
+                <p class="text-primary text-center px-[70px] text-[16px] xs:text-[18px] ">We work with you to develop a
+                    user experience which
+                    delivers value to your
+                    audience. Value means
                     repeat visits and referrals via social media and other channels.<br /><br />
+
                     BE, BTech in computer engineering. We do care about your project importance because once we were
-                    also the students.
-                </p>
+                    also the students.</p>
 
                 <button
-                    class="border-primary px-[30px] py-5 w-[212px] rounded-md border-solid border-[2px] text-white text-base bg-transparent">
+                    class="border-primary px-[30px] mt-[60px] py-auto  w-[170px] h-[56px] xs:w-[212px] rounded-md border-solid border-[2px] text-white text-base bg-transparent">
                     Get in touch
                 </button>
             </div>
+                    
         </div>
-
-
-
-
-
-
-        <div class=" xs:mt-[88px] md:mt-40 p-14  ">
-            <div class="flex flex-col items-center w-full mb-24  ">
+         <div id="team" class="mt-[150px]">
+            <div class="flex flex-col items-center w-full mb-28  ">
                 <h1 class="text-5xl font-mullish font-medium text-violet text-center">MEET OUR TEAM</h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-[30px] ">
+            <div class="flex  flex-wrap justify-center gap-[30px] ">
 
-                <div class="flex w-[337px] h-[468px]">
+                <div class="flex xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
                     <div
-                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        class="flex flex-col card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
-                            <img src="./assets/team1.jpeg" class="w-full h-full object-cover object-top" />
+                            <img src="assets/team1.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
 
 
-                        <div class="p-5 flex flex-col gap-5 ">
+                        <div class="p-5 flex flex-col ">
                             <div>
-                                <p class="text-[24px] text-violet font-mullish font-semibold">Rachel Barlet</p>
+                                <p class=" text-[15px] xs:text-[24px] ] text-violet font-mullish font-semibold">Rachel
+                                    Barlet</p>
                                 <p class="text-grey1 text-[14px]">Front end developer</p>
                             </div>
 
-                            <p class="text-grey1 text-base font-400 text-justify">They way doctors treat urinary tract
+                            <p class="text-grey1  mt-5 text-[12px] xs:text-[16px] font-400 ">They way doctors treat
+                                urinary tract
+                                infections may be wrong, and antibiotic resistance is
+                                growing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
+                    <div
+                        class="flex flex-col  card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
+                            <img src="assets/team2.jpeg" class="w-full h-full object-cover object-top" />
+                        </div>
+
+
+                        <div class="p-5 flex flex-col ">
+                            <div>
+                                <p class=" text-[15px] xs:text-[24px] ] text-violet font-mullish font-semibold">Michael
+                                    johnson</p>
+                                <p class="text-grey1 text-[14px]">UI/UX designer</p>
+                            </div>
+
+                            <p class="text-grey1  mt-5 text-[12px] xs:text-[16px] font-400 ">They way doctors treat
+                                urinary tract
                                 infections may be wrong, and antibiotic resistance is
                                 growing</p>
                         </div>
@@ -340,22 +385,25 @@
                 </div>
 
 
-                <div class="flex w-[337px] h-[468px]">
+
+                <div class="flex xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
                     <div
-                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        class="flex flex-col  card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
-                            <img src="./assets/team2.jpeg" class="w-full h-full object-cover object-top" />
+                            <img src="assets/team3.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
 
 
-                        <div class="p-5 flex flex-col gap-5 ">
+                        <div class="p-5 flex flex-col ">
                             <div>
-                                <p class="text-[24px] text-violet font-mullish font-semibold">Michael johnson</p>
-                                <p class="text-grey1 text-[14px]">UI/UX designer</p>
+                                <p class=" text-[15px] xs:text-[24px]  text-violet font-mullish font-semibold">Lisa
+                                    Aniston</p>
+                                <p class="text-grey1 text-[14px]">Team management</p>
                             </div>
 
-                            <p class="text-grey1 text-base font-400 text-justify">Treating customers with respect earns
-                                loyalty. Dig into marketing personas that reflect real people to gain the most
+                            <p class="text-grey1 mt-5  text-[12px] xs:text-[16px] font-400 ">They way doctors treat
+                                urinary tract
+                                infections may be wrong, and antibiotic resistance is
                                 growing</p>
                         </div>
                     </div>
@@ -363,44 +411,25 @@
 
 
 
-                <div class="flex w-[337px] h-[468px]">
+                <div class="flex xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
                     <div
-                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        class="flex flex-col  card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
-                            <img src="./assets/team3.jpeg" class="w-full h-full object-cover object-top" />
+                            <img src="assets/team4.jpeg" class="w-full h-full object-cover object-top" />
                         </div>
 
 
-                        <div class="p-5 flex flex-col gap-5 ">
+                        <div class="p-5 flex flex-col ">
                             <div>
-                                <p class="text-[24px] text-violet font-mullish font-semibold">Lisa Aniston</p>
-                                <p class="text-grey1 text-[14px]">Team management</p>
-                            </div>
-
-                            <p class="text-grey1 text-base font-400 text-justify">Treating customers with respect earns
-                                you loyalty. Dig into marketing personas that reflect real people to.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="flex w-[337px] h-[468px]">
-                    <div
-                        class="flex flex-col  card w-[337px] h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
-                        <div class="text-center flex flex-col gap-5 w-full h-[50%]">
-                            <img src="./assets/team4.jpeg" class="w-full h-full object-cover object-top" />
-                        </div>
-
-
-                        <div class="p-5 flex flex-col gap-5 ">
-                            <div>
-                                <p class="text-[24px] text-violet font-mullish font-semibold">David Schimmer</p>
+                                <p class=" text-[15px] xs:text-[24px]  text-violet font-mullish font-semibold">David
+                                    Schimmer</p>
                                 <p class="text-grey1 text-[14px]">Web developer</p>
                             </div>
 
-                            <p class="text-grey1 text-base font-400 text-justify ">They way doctors treat urinary tract
-                                infections may be wrong, and antibiotic resistance is growing</p>
+                            <p class="text-grey1  mt-5 text-[12px] xs:text-[16px] font-400 ">They way doctors treat
+                                urinary tract
+                                infections may be wrong, and antibiotic resistance is
+                                growing</p>
                         </div>
                     </div>
                 </div>
@@ -408,20 +437,19 @@
 
         </div>
 
-
-
-        <div class="md:mt-[92px] xs:mt-[89px]       ">
-            <div class="flex flex-col  items-center w-full mb-24  ">
-                <h1 class="md:text-5xl xs:text-[30px] font-mullish xs:font-400 md:font-medium text-violet text-center">
+ 
+        <div class="md:mt-[92px] mt-[40px] xs:mt-[60px] p-2 ">
+            <div class="flex flex-col  items-center w-full xs:mb-[60px] mb-[20px]">
+                <h1 class="md:text-5xl text-[30px] font-mullish xs:font-400 md:font-medium text-violet text-center">
                     WHAT PEOPLE SAY ABOUT US</h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-4"></div>
             </div>
 
-            <div class="flex  justify-center gap-[30px] text-grey1 flex-wrap ">
+            <div class="flex justify-center gap-[35px] text-grey1 flex-wrap ">
 
                 <div class="flex w-[337px] h-[468px]">
                     <div
-                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        class="flex flex-col  card w-[337px] md:h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
                         <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
 
                         <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
@@ -468,7 +496,7 @@
 
                 <div class="flex w-[337px] h-[468px]">
                     <div
-                        class="flex flex-col  card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
+                        class="flex flex-col card w-[337px] h-[444px] p-8 shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary  justify-center ">
                         <img src="assets/rating.svg" class="w-[120px] mb-[28px] " alt="">
 
                         <p class="text-grey1 text-base font-400 text-justify  mb-[50px] ">Feucilius. At preprotious of
@@ -516,22 +544,24 @@
         </div>
 
 
-        <div
-            class="  xs:h-[532px] min-w-screen md:h-[396px] flex flex-col items-center xs:justify-center md:justify-start xs:gap-5 md:gap-8 bg-pink1 xs:mt-[155px] md:mt-[229px]">
-            <p class="text-white  xs:text-[37px] xs:text-center xs:text-[37px]  md:text-[48px]  md:mt-[63px]  ">WANT TO
-                WORK WITH US</p>
-            <p class="text-center md:w-[764px] xs:w-[320px] h-[99px] text-white leading-6   md:text-[20px] font-400 ">
-                They way doctors treat injury infections may n wrong and antibiotic resistance is growing to cure the
-                disease. Have project in mind shoot us an email at technofevers@email.com
-            </p>
-            <input type="text" placeholder="Email"
-                class="px-3 py-2 xs:mt-12 md:mt-0 border-2 h-[40px] w-[270px] rounded-sm text-[20px]">
+         <div id="#contact" class="w-full h-[396px] mt-[204px] flex flex-col bg-[#F64C72]">
+            <p class="text-white text-[36px] mt-[64px] font-[600px] sm:text-[48px] mb-[30px] md:mb-[26px] text-center ">
+                WANT TO WORK WITH US</p>
+            <div class="flex flex-col items-center">
+                <p
+                    class="text-center max-w-[764px] h-[99px] mb-[60px] md:mb-[10px] text-white leading-6 sm:text-[20px] text-[16px] font-400 ">
+                    They way doctors treat injury infections may n wrong and antibiotic resistance is growing to cure
+                    the disease. Have project in mind shoot us an email at technofevers@email.com
+                </p>
+                <input type="text" placeholder="Email"
+                    class="px-3 py-2 border-4  h-[48px] w-[270px] rounded-md text-[20px]">
+            </div>
+
         </div>
 
- 
-        <div
-            class="w-full h-[220px] flex flex-col xs:flex-row justify-center gap-[32px] xs:justify-between items-center">
-            <div class=" xs:pl-[10px] md:pl-[140px]">
+         <div class="w-full h-[220px] flex flex-col xs:flex-row  gap-[32px] xs:justify-between ">
+
+            <div class="md:ml-[140px] mt-[77px]">
                 <p class="text-[14px] text-[#553D67]">
                     @ copyright technoFevers.com
                 </p>
@@ -539,15 +569,71 @@
                     All rights reserved
                 </p>
             </div>
-            <div class="md:pr-[82px]">
-                <div class="w-[163px] xs:[245px]">
-                    <img src="assets/footer.svg" alt="">
-                </div>
+
+
+            <div class="mt-[86px] w-[163px] h-[28px] xs:[245px] md:mr-[82px] ">
+                <ul class="flex justify-center flex-start items-center w-full h-full gap-[21px]">
+                    <li>
+                        <a href="">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.0844 5.79994C26.0844 2.62718 23.5454 0.0483398 20.4044 0.0483398H5.67991C2.53898 0.0483398 0 2.61937 0 5.79994V12.7863C0 15.959 2.53898 18.5379 5.67991 18.5379H20.4044C23.5377 18.5379 26.0844 15.9668 26.0844 12.7863V5.79994ZM16.7928 9.64477L10.9199 12.9035C10.6653 13.0442 10.4337 12.8566 10.4337 12.5596V5.86246C10.4337 5.5655 10.673 5.37795 10.9276 5.52643L16.8391 8.95707C17.1015 9.11337 17.0552 9.49629 16.7928 9.64477Z"
+                                    fill="#553D67" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.9436 2.59528C25.1256 2.97038 24.2226 3.19701 23.3429 3.34549C23.7596 3.27516 24.377 2.5015 24.6239 2.19673C25.0021 1.72003 25.3185 1.18082 25.4883 0.594721C25.5114 0.547833 25.5269 0.49313 25.4805 0.454057C25.4265 0.430613 25.3879 0.446242 25.3416 0.461871C24.3538 0.99327 23.3352 1.384 22.247 1.65752C22.1544 1.68096 22.0927 1.65752 22.0309 1.60281C21.9383 1.50122 21.8534 1.39963 21.7608 1.32149C21.3055 0.930752 20.8116 0.618165 20.2637 0.391539C19.5383 0.0945815 18.7434 -0.0382683 17.9639 0.0164345C17.2076 0.0633226 16.4591 0.282134 15.7877 0.641609C15.1085 1.00108 14.5066 1.49341 14.0281 2.09514C13.5342 2.7125 13.1638 3.44708 12.9786 4.22855C12.8011 4.97876 12.8088 5.72115 12.9246 6.47918C12.94 6.60421 12.9323 6.61984 12.8165 6.60421C8.57202 5.96341 5.04523 4.42391 2.18984 1.12612C2.06637 0.985455 1.99691 0.985455 1.89659 1.13393C0.646391 3.0329 1.25606 6.08063 2.81494 7.58105C3.02331 7.78423 3.23939 7.97959 3.47091 8.15933C3.38602 8.17496 2.34419 8.06556 1.41812 7.58105C1.29464 7.5029 1.2329 7.54979 1.21747 7.69045C1.20975 7.89363 1.22519 8.08119 1.24834 8.30781C1.48757 10.2302 2.80723 12.012 4.60535 12.7075C4.82143 12.8013 5.05295 12.8794 5.28447 12.9185C4.87545 13.0122 4.451 13.0748 3.27026 12.981C3.12363 12.9497 3.06961 13.0279 3.12363 13.1685C4.01112 15.6145 5.91728 16.3413 7.35269 16.7477C7.54563 16.7789 7.73856 16.7789 7.93149 16.8258C7.92377 16.8414 7.90834 16.8414 7.90062 16.8571C7.42987 17.5917 5.77837 18.1309 5.01436 18.4044C3.61754 18.8967 2.10495 19.1155 0.630957 18.9748C0.391722 18.9436 0.345418 18.9436 0.283679 18.9748C0.221941 19.0139 0.275962 19.0686 0.353135 19.1311C0.654108 19.3343 0.955082 19.5062 1.26377 19.6782C2.19756 20.1783 3.17765 20.5769 4.19633 20.866C9.4595 22.3352 15.3941 21.2567 19.3453 17.2791C22.4477 14.1532 23.5358 9.8473 23.5358 5.5336C23.5358 5.36168 23.7364 5.2679 23.8522 5.18194C24.6625 4.56458 25.3031 3.83 25.905 3.00946C26.0439 2.8219 26.0285 2.6578 26.0285 2.59528C26.0285 2.58746 26.0285 2.57184 26.0285 2.57184C26.0362 2.52495 26.0516 2.54839 25.9436 2.59528Z"
+                                    fill="#553D67" />
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="13" height="28" viewBox="0 0 13 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.0909 13.871V26.8511C3.0909 27.0387 3.23753 27.1872 3.42274 27.1872H8.1843C8.36951 27.1872 8.51613 27.0387 8.51613 26.8511V13.66H11.9658C12.1355 13.66 12.2822 13.5271 12.2976 13.3474L12.6294 9.37752C12.6449 9.18215 12.4905 9.01023 12.2976 9.01023H8.51613V6.18913C8.51613 5.52488 9.04862 4.99348 9.69687 4.99348H12.3593C12.5446 4.99348 12.6912 4.84501 12.6912 4.65745V0.679781C12.6912 0.492229 12.5446 0.34375 12.3593 0.34375H7.86789C5.22858 0.34375 3.0909 2.50842 3.0909 5.18104V9.01023H0.713984C0.528769 9.01023 0.382141 9.15871 0.382141 9.34626V13.3161C0.382141 13.5037 0.528769 13.6521 0.713984 13.6521H3.0909V13.871Z"
+                                    fill="#553D67" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2519 5.15769C20.3567 5.15769 19.6235 5.89227 19.6235 6.80659C19.6235 7.71309 20.349 8.45548 21.2519 8.45548C22.1471 8.45548 22.8802 7.7209 22.8802 6.80659C22.8725 5.89227 22.1471 5.15769 21.2519 5.15769ZM14.0208 7.26765C10.2548 7.26765 7.19103 10.3701 7.19103 14.1836C7.19103 17.9972 10.2548 21.0996 14.0208 21.0996C17.7868 21.0996 20.8506 17.9972 20.8506 14.1836C20.8506 10.3701 17.7868 7.26765 14.0208 7.26765ZM14.0208 18.6068C11.6053 18.6068 9.64513 16.6218 9.64513 14.1758C9.64513 11.7298 11.6053 9.74491 14.0208 9.74491C16.4363 9.74491 18.3965 11.7298 18.3965 14.1758C18.3965 16.6218 16.4363 18.6068 14.0208 18.6068ZM27.7961 8.43204C27.7961 3.77449 24.0687 0 19.4692 0H8.47982C3.88034 0 0.152893 3.77449 0.152893 8.43204V19.5601C0.152893 24.2177 3.88034 27.9922 8.47982 27.9922H19.4692C24.0687 27.9922 27.7961 24.2177 27.7961 19.5601V8.43204ZM25.1877 19.568C25.1877 22.7642 22.6256 25.3586 19.4692 25.3586H8.47982C5.32346 25.3586 2.76133 22.7642 2.76133 19.568V8.43204C2.76133 5.23584 5.32346 2.64136 8.47982 2.64136H19.4692C22.6256 2.64136 25.1877 5.23584 25.1877 8.43204V19.568Z"
+                                    fill="#553D67" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.8032 13.8243V22.1703C23.8032 22.3735 23.6411 22.5454 23.4328 22.5454H19.1806C18.9799 22.5454 18.8101 22.3813 18.8101 22.1703V14.4104C18.8101 12.3707 18.0924 10.9719 16.2789 10.9719C14.8975 10.9719 14.0795 11.9097 13.7167 12.824C13.5855 13.1522 13.5547 13.5976 13.5547 14.0587V22.1781C13.5547 22.3813 13.3926 22.5533 13.1842 22.5533H8.93205C8.7314 22.5533 8.56161 22.3891 8.56161 22.1781C8.56933 20.1151 8.61564 10.081 8.56934 7.7288C8.56162 7.51781 8.73139 7.3537 8.93975 7.3537H13.1842C13.3849 7.3537 13.5547 7.51781 13.5547 7.7288V9.51055C13.547 9.52618 13.5315 9.54181 13.5238 9.55744H13.5547V9.51055C14.2184 8.47901 15.3991 7.00204 18.0538 7.00204C21.3414 6.98641 23.8032 9.15889 23.8032 13.8243ZM1.18391 22.5454H5.43613C5.63678 22.5454 5.80655 22.3813 5.80655 22.1703V7.71317C5.80655 7.50999 5.6445 7.33807 5.43613 7.33807H1.18391C0.983265 7.33807 0.813477 7.50218 0.813477 7.71317V22.1703C0.813477 22.3813 0.983265 22.5454 1.18391 22.5454Z"
+                                    fill="#553D67" />
+                                <path
+                                    d="M5.83742 2.70392C5.83742 4.19652 4.64125 5.4078 3.16726 5.4078C1.69326 5.4078 0.49707 4.19652 0.49707 2.70392C0.49707 1.21131 1.69326 3.73621e-05 3.16726 3.73621e-05C4.64125 -0.00777732 5.83742 1.21131 5.83742 2.70392Z"
+                                    fill="#553D67" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </div>
-
-
     </div>
+
+
 </body>
 
 </html>
