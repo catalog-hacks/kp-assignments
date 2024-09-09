@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="./technofevers.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="icon" href="assets/header-logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,7 @@
                     },
                     backgroundImage: {
                         herobg: "url('./assets/hero-bg.jpeg')",
+                        card: "url(./assets/team1.jpeg)"
                     },
                     screens: {
                         xs: '365px',
@@ -49,47 +51,38 @@
 <body>
     <div class="w-screen h-screen overflow-x-hidden">
 
-        <!-- Navbar -->
-        <div
-            class="w-full h-[92px] px-[20px] mt-[10px] xs:h-[227px] flex flex-row md:flex-col justify-between items-center">
-            <div class="md:w-[145px] md:h-[145px] ml-4 md:mb-[25px]  ">
+         <div class="w-full h-[92px] mt-[px] xs:h-[227px] flex xs:flex-col justify-between  items-center">
+            <div
+                class=" xs:w-[145px] flex flex-col justify-center pl-2 w-[50px] h-[50px]  xs:h-[145px] xs:ml-4 mb-[25px]">
                 <div class="md:w-[120px] md:h-[120px] flex-col">
                     <img src="./assets/header-logo.svg" alt="header-logo"
-                        class="w-[48px] h-[48px] md:w-[7.5rem] md:h-[7.5rem]" />
-                    <p class="text-[6px] md:text-lg font-semibold font-mullish">
+                        class="w-[50px] h-[50px] xs:w-[120px] xs:h-[120px] mt-[15px] xs:mt-0" />
+                    <p class="text-[6px]   xs:text-lg font-semibold font-mullish">
                         <span class="text-pink1">TECHNO</span><span class="text-violet">FEVERS</span>
                     </p>
                 </div>
             </div>
 
-            <!-- Navigation for larger screens -->
-            <div class="hidden md:flex mb-[40px]">
-                <nav class="header-nav font-opensans text-[14px] md:text-[20px] text-violet flex gap-11">
-                    <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#team">Team</a>
-                    <a href="#contact">Contact Us</a>
-                </nav>
-            </div>
 
-            <!-- Mobile menu icon for smaller screens -->
-            <div class="xs:flex md:hidden">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M26.2798 23.76L9.71979 23.76" stroke="black" stroke-width="1.8" stroke-linecap="round"/>
-<path d="M26.2798 18L9.71979 18" stroke="black" stroke-width="1.8" stroke-linecap="round"/>
-<path d="M26.2798 12.24L9.71979 12.24" stroke="black" stroke-width="1.8" stroke-linecap="round"/>
-</svg>
-
-            </div>
+            <nav class="hidden xs:flex ">
+                <ul class="flex xs:gap-[27px] md:gap-[35px]  mb-[35px] text-violet">
+                    <li class="font-opensans text-[15px] md:text-[20px]"> <a href="#">Home</a> </li>
+                    <li class="font-opensans text-[15px] md:text-[20px]"><a href="#about">About</a></li>
+                    <li class="font-opensans text-[15px] md:text-[20px]"><a href="#services">Services</a></li>
+                    <li class="font-opensans text-[15px] md:text-[20px]"><a href="#team">Team</a></li>
+                    <li class="font-opensans text-[15px] md:text-[20px]"><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <nav class=" xs:hidden">
+                <img src="assets/menu.svg" alt="menu-icon">
+            </nav>
         </div>
 
 
 
 
 
-        <!-- HeroSection -->
-        <div class="relative overflow-hidden  ">
+         <div class="relative overflow-hidden  ">
             <img src="assets/hero-bg.jpeg" class="w-full h-[583px] object-cover" alt="Background Image">
             <div class="absolute h-full inset-0 z-[2]" style="background-color: rgba(109, 83, 87, 0.5);">
                 <div class="flex flex-col items-center gap-[10px] h-full p-8 space-y-6">
@@ -138,8 +131,7 @@
                         evolving business environment to offer project performance optimization.
                     </span>
                 </div>
-                <!-- About us -->
-                <div class=" hidden  mt-[28px] sm:block w-full md:w-[864px] h-[120px]">
+                 <div class=" hidden  mt-[28px] sm:block w-full md:w-[864px] h-[120px]">
                     <div class="w-full  h-[1px] rounded bg-[#553D67] rounded-xl "></div>
                     <div class="flex justify-between px-16" style="transform: translateY(-25px);">
                         <div
@@ -173,9 +165,7 @@
 
         </div>
 
-        <!-- Achivements -->
-
-        <div class="flex gap-[25px] xs:gap-6  w-full flex-col md:flex-row justify-center items-center ">
+         <div class="flex gap-[25px] xs:gap-6  w-full flex-col md:flex-row justify-center items-center ">
             <div class="flex-col justify-center  items-center card w-[303px] h-[252px] shadow-[0px_10px_15px_0px_#06000040] mt-[20px] xs:w-[367px] h-[296px] 
                 bg-primary ">
                 <div class="text-center  flex-col">
@@ -249,23 +239,24 @@
                 </div>
             </div>
         </div>
-        <!-- what we do -->
-
+ 
         <div id="services" class="p-10 mt-[3rem] w-full mx-auto flex flex-col">
-            <div class="flex flex-col items-center w-full mb-8">
+            <div class="flex flex-col   items-center w-full mb-8">
                 <h1 class="md:text-5xl xs:text-[20px] font-mullish font-medium text-violet text-center">WHAT DO WE DO
                 </h1>
                 <div class="w-[156px] h-[3px] bg-pink1 mt-10"></div>
             </div>
 
-            <div class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mx-auto justify-items-center">
+            <div
+                class=" w grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]  mx-auto  justify-center items-center">
                 <div
                     class="flex flex-col justify-center items-center card xs:w-[308px] xs:h-[331px] md:w-[367px] md:h-[395px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                     <div class="text-center flex flex-col items-center gap-5 p-3 mb-12">
                         <img src="assets/coding.svg" class="w-[105px] h-[112px]" />
-                        <p class="text-violet xs:text-[20px] md:text-[26px]">Maintenance & support</p>
-                        <p class="md:text-[18px] xs:text-base text-[#495C76]">Software maintenance and support services
-                            involve both application and product maintenance.</p>
+                        <p class="text-violet text-[16px] xs:text-[18px] ">Web design & development</p>
+                        <p class="md:text-[18px] xs:text-base text-[#495C76]">We work with you to develop a user
+                            experience which delivers value to your audience. Value means repeat visits and referrals
+                            via social media and other channels.</p>
                     </div>
                 </div>
 
@@ -322,7 +313,6 @@
 
         </div>
 
-        <!-- our miisson -->
         <div
             class="w-[100%] h-[670px] mt-[50px] flex md:justify-between justify-center items-center bg-pink1 md:mt-28 mb-10 ">
             <img src="assets/mission.jpeg" class="hidden -scale-x-100 lg:block w-[50%] h-full object-cover" />
@@ -347,7 +337,7 @@
         </div>
 
 
-        <!-- meet our team -->
+       
         <div id="team" class=" mt-[80px] xs:mt-[150px]">
             <div class="flex flex-col items-center w-full mb-12 xs:mb-28  ">
                 <h1 class="xs:text-5xl text-[30px] font-mullish font-medium text-violet text-center">MEET OUR TEAM</h1>
@@ -359,10 +349,9 @@
 
                 <div class="flex xs:ml-2 xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
                     <div
-                        class="flex flex-col  rounded-md card w-[337px] rounded-md md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
-                        <div class="text-center aspect-[custom] flex rounded-md flex-col gap-5  w-full h-[50%]">
-                            <img src="assets/team1.jpeg"
-                                class="w-full  rounded-t-md h-full object-fill   " />
+                        class="flex flex-col bg  rounded-md card w-[337px] rounded-md md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        <div class="text-center   flex rounded-md flex-col gap-5  w-full h-[50%]">
+                            <img src="assets/team1.jpeg" class="w-full    h-full object-cover   " />
                         </div>
 
 
@@ -385,8 +374,7 @@
                     <div
                         class="flex flex-col rounded-md card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex  flex-col gap-5 w-full h-[50%]">
-                            <img src="assets/team2.jpeg"
-                                class="w-full h-full rounded-t-md object-fill object-top" />
+                            <img src="assets/team2.jpeg" class="w-full h-full   object-cover" />
                         </div>
 
 
@@ -409,10 +397,9 @@
 
                 <div class="flex xs:w-[337px] xs:h-[468px] w-[230px] h-[310px]">
                     <div
-                        class="flex flex-col rounded-md card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
+                        class="flex flex-col rounded-md  card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="text-center flex flex-col gap-5 w-full h-[50%]">
-                            <img src="assets/team3.jpeg"
-                                class="w-full h-full rounded-t-md object-fill object-top" />
+                            <img src="assets/team3.jpeg" class="w-full h-full    object-cover" />
                         </div>
 
 
@@ -437,8 +424,7 @@
                     <div
                         class="flex flex-col rounded-md card w-[337px] md:h-[468px] shadow-[0px_5px_6px_0px_rgba(126,97,97,0.5)] bg-primary">
                         <div class="relative text-center aspect-[custom] flex flex-col gap-5 w-full h-[50%]">
-                            <img src="assets/team4.jpeg"
-                                class="absolute w-full h-full rounded-t-md inset-0 object-fill object-top" />
+                            <img src="assets/team4.jpeg" class="absolute w-full h-full   inset-0  object-cover" />
                         </div>
 
 
@@ -461,17 +447,11 @@
 
             </div>
 
-            <div class="cursor-pointer hidden mr-[141px] mt-[63px] gap-6 xs:flex justify-end">
-                <svg width="49" height="17" viewBox="0 0 49 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M13.4748 16H10.3592L2.71354 3.61176H2.62847L2.68164 4.30295C2.78089 5.62153 2.83051 6.82668 2.83051 7.9184V16H0.523004V0.453558H3.60677L11.2311 12.778H11.2949C11.2807 12.6149 11.2524 12.023 11.2099 11.0022C11.1673 9.97425 11.1461 9.17318 11.1461 8.59896V0.453558H13.4748V16ZM22.4497 16.2127C20.6207 16.2127 19.1887 15.681 18.1536 14.6176C17.1257 13.5472 16.6118 12.0762 16.6118 10.2046C16.6118 8.28349 17.0903 6.77351 18.0473 5.6747C19.0043 4.57588 20.3194 4.02648 21.9924 4.02648C23.5449 4.02648 24.7713 4.4979 25.6717 5.44075C26.572 6.38361 27.0221 7.68092 27.0221 9.33268V10.6832H19.1851C19.2206 11.8245 19.5289 12.7036 20.1102 13.3203C20.6916 13.93 21.5103 14.2348 22.5666 14.2348C23.2614 14.2348 23.9065 14.171 24.502 14.0434C25.1045 13.9087 25.7496 13.6889 26.4373 13.3841V15.4151C25.8276 15.7058 25.2109 15.9114 24.587 16.0319C23.9632 16.1524 23.2507 16.2127 22.4497 16.2127ZM21.9924 5.91927C21.1984 5.91927 20.5604 6.17093 20.0783 6.67426C19.6034 7.17759 19.3198 7.91131 19.2277 8.87543H24.5658C24.5516 7.90422 24.3176 7.1705 23.8639 6.67426C23.4102 6.17093 22.7864 5.91927 21.9924 5.91927ZM32.4772 9.99197L28.5321 4.23915H31.3819L34.0616 8.35438L36.7626 4.23915H39.5911L35.6354 9.99197L39.7932 16H36.9646L34.0616 11.5977L31.1693 16H28.3407L32.4772 9.99197ZM46.2372 14.1923C46.8469 14.1923 47.4565 14.0966 48.0662 13.9052V15.7873C47.7897 15.9078 47.4317 16.0071 46.9922 16.0851C46.5598 16.1701 46.1096 16.2127 45.6417 16.2127C43.2739 16.2127 42.0901 14.965 42.0901 12.4696V6.13194H40.4844V5.02604L42.207 4.11154L43.0577 1.62326H44.5996V4.23915H47.9492V6.13194H44.5996V12.4271C44.5996 13.0297 44.7485 13.4763 45.0462 13.7669C45.3511 14.0505 45.748 14.1923 46.2372 14.1923Z"
-                        fill="#553D67" />
-                </svg>
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.37403 12.1342C0.68028 12.4404 1.17403 12.4404 1.48028 12.1342L6.67403 6.94043C6.91778 6.69668 6.91778 6.30293 6.67403 6.05918L1.48028 0.86543C1.17403 0.55918 0.68028 0.55918 0.37403 0.86543C0.0677795 1.17168 0.0677795 1.66543 0.37403 1.97168L4.89903 6.50293L0.36778 11.0342C0.0677795 11.3342 0.0677795 11.8342 0.37403 12.1342Z"
-                        fill="#553D67" />
-                </svg>
+            <div class="cursor-pointer hidden mr-[141px] mt-[63px] gap-3 xs:flex justify-end">
+
+                <p class="text-[21.78px]  text-violet font-semibold">Next</p>
+                <img src="assets/next-button.svg" />
+
 
 
             </div>
@@ -479,9 +459,9 @@
         </div>
 
 
-        <!-- what people say -->
+ 
 
-        <div class="md:mt-[92px] mt-[80px] xs:mt-[60px] p-2  ">
+        <div class="md:mt-[92px] mt-[80px] xs:mt-[60px]  ">
             <div class="flex flex-col  items-center w-full xs:mb-[60px] mb-[20px]">
                 <h1 class="md:text-5xl text-[30px] font-mullish xs:font-400 md:font-medium text-violet text-center">
                     WHAT PEOPLE SAY ABOUT US</h1>
@@ -597,25 +577,15 @@
             <div
                 class="flex gap-[15px] justify-end -mb-[45px] xs:-mb-[60px] mr-[20px] xs:mr-[141px] -mt-[35px] xs:mt-[60px]">
 
-                <svg class="cursor-pointer" width="27" height="24" viewBox="0 0 27 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M24.5359 10.5074H6.38467L14.3147 3.18738C14.9484 2.60238 14.9484 1.64238 14.3147 1.05738C14.0111 0.776502 13.5989 0.618652 13.169 0.618652C12.7392 0.618652 12.327 0.776502 12.0234 1.05738L1.31467 10.9424C0.680918 11.5274 0.680918 12.4724 1.31467 13.0574L12.0234 22.9424C12.6572 23.5274 13.6809 23.5274 14.3147 22.9424C14.9484 22.3574 14.9484 21.4124 14.3147 20.8274L6.38467 13.5074H24.5359C25.4297 13.5074 26.1609 12.8324 26.1609 12.0074C26.1609 11.1824 25.4297 10.5074 24.5359 10.5074Z"
-                        fill="#BBC8D4" />
-                </svg>
-                <svg class="cursor-pointer" width="27" height="24" viewBox="0 0 27 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2.4646 13.5001H20.6159L12.6858 20.8201C12.0521 21.4051 12.0521 22.3651 12.6858 22.9501C13.3196 23.5351 14.3433 23.5351 14.9771 22.9501L25.6859 13.0651C26.3196 12.4801 26.3196 11.5351 25.6859 10.9501L14.9934 1.05006C14.6897 0.769177 14.2776 0.611328 13.8477 0.611328C13.4179 0.611328 13.0057 0.769177 12.7021 1.05006C12.0683 1.63506 12.0683 2.58006 12.7021 3.16506L20.6159 10.5001H2.4646C1.57085 10.5001 0.8396 11.1751 0.8396 12.0001C0.8396 12.8251 1.57085 13.5001 2.4646 13.5001Z"
-                        fill="#553D67" />
-                </svg>
+             <img src="assets/arrow-left.svg" />
+             <img  src="assets/arrow-right.svg" />
+               
 
             </div>
 
 
-            <!-- work with us -->
-            <div id="contact"
-                class="w-full min-h-[396px] px-3 xs:h-[396px] mt-[135px] xs:mt-[204px] flex flex-col bg-[#F64C72]">
+             <div id="contact"
+                class="w-full min-h-[396px]   xs:h-[396px] mt-[135px] xs:mt-[204px] flex flex-col bg-[#F64C72]">
                 <p
                     class="text-white text-[36px] mt-[90px] xs:mt-[64px] font-[600] sm:text-[48px] mb-[20px] md:mb-[26px] text-center">
                     WANT TO WORK WITH US</p>
@@ -632,8 +602,7 @@
             </div>
 
 
-            <!-- footer    -->
-            <div class="w-full h-[169px] xs:h-[220px]  flex flex-col xs:flex-row  xs:gap-[32px] xs:justify-between ">
+             <div class="w-full h-[169px] xs:h-[220px]  flex flex-col xs:flex-row  xs:gap-[32px] xs:justify-between ">
 
                 <div class="md:ml-[140px] mx-auto xs:mx-0 mt-[24px] xs:mt-[77px]">
                     <p class="text-[14px] text-[#553D67]">
@@ -649,56 +618,28 @@
                     <ul class="flex justify-center xs:justify-normal xs:flex-start w-full items-center gap-[21px]">
                         <li>
                             <a href="">
-                                <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M26.0844 5.79994C26.0844 2.62718 23.5454 0.0483398 20.4044 0.0483398H5.67991C2.53898 0.0483398 0 2.61937 0 5.79994V12.7863C0 15.959 2.53898 18.5379 5.67991 18.5379H20.4044C23.5377 18.5379 26.0844 15.9668 26.0844 12.7863V5.79994ZM16.7928 9.64477L10.9199 12.9035C10.6653 13.0442 10.4337 12.8566 10.4337 12.5596V5.86246C10.4337 5.5655 10.673 5.37795 10.9276 5.52643L16.8391 8.95707C17.1015 9.11337 17.0552 9.49629 16.7928 9.64477Z"
-                                        fill="#553D67" />
-                                </svg>
+                               <img src="assets/youtube.svg" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.9436 2.59528C25.1256 2.97038 24.2226 3.19701 23.3429 3.34549C23.7596 3.27516 24.377 2.5015 24.6239 2.19673C25.0021 1.72003 25.3185 1.18082 25.4883 0.594721C25.5114 0.547833 25.5269 0.49313 25.4805 0.454057C25.4265 0.430613 25.3879 0.446242 25.3416 0.461871C24.3538 0.99327 23.3352 1.384 22.247 1.65752C22.1544 1.68096 22.0927 1.65752 22.0309 1.60281C21.9383 1.50122 21.8534 1.39963 21.7608 1.32149C21.3055 0.930752 20.8116 0.618165 20.2637 0.391539C19.5383 0.0945815 18.7434 -0.0382683 17.9639 0.0164345C17.2076 0.0633226 16.4591 0.282134 15.7877 0.641609C15.1085 1.00108 14.5066 1.49341 14.0281 2.09514C13.5342 2.7125 13.1638 3.44708 12.9786 4.22855C12.8011 4.97876 12.8088 5.72115 12.9246 6.47918C12.94 6.60421 12.9323 6.61984 12.8165 6.60421C8.57202 5.96341 5.04523 4.42391 2.18984 1.12612C2.06637 0.985455 1.99691 0.985455 1.89659 1.13393C0.646391 3.0329 1.25606 6.08063 2.81494 7.58105C3.02331 7.78423 3.23939 7.97959 3.47091 8.15933C3.38602 8.17496 2.34419 8.06556 1.41812 7.58105C1.29464 7.5029 1.2329 7.54979 1.21747 7.69045C1.20975 7.89363 1.22519 8.08119 1.24834 8.30781C1.48757 10.2302 2.80723 12.012 4.60535 12.7075C4.82143 12.8013 5.05295 12.8794 5.28447 12.9185C4.87545 13.0122 4.451 13.0748 3.27026 12.981C3.12363 12.9497 3.06961 13.0279 3.12363 13.1685C4.01112 15.6145 5.91728 16.3413 7.35269 16.7477C7.54563 16.7789 7.73856 16.7789 7.93149 16.8258C7.92377 16.8414 7.90834 16.8414 7.90062 16.8571C7.42987 17.5917 5.77837 18.1309 5.01436 18.4044C3.61754 18.8967 2.10495 19.1155 0.630957 18.9748C0.391722 18.9436 0.345418 18.9436 0.283679 18.9748C0.221941 19.0139 0.275962 19.0686 0.353135 19.1311C0.654108 19.3343 0.955082 19.5062 1.26377 19.6782C2.19756 20.1783 3.17765 20.5769 4.19633 20.866C9.4595 22.3352 15.3941 21.2567 19.3453 17.2791C22.4477 14.1532 23.5358 9.8473 23.5358 5.5336C23.5358 5.36168 23.7364 5.2679 23.8522 5.18194C24.6625 4.56458 25.3031 3.83 25.905 3.00946C26.0439 2.8219 26.0285 2.6578 26.0285 2.59528C26.0285 2.58746 26.0285 2.57184 26.0285 2.57184C26.0362 2.52495 26.0516 2.54839 25.9436 2.59528Z"
-                                        fill="#553D67" />
-                                </svg>
+                                <img src="assets/twitter.svg" />
                             </a>
 
                         </li>
                         <li>
                             <a href="">
-                                <svg width="13" height="28" viewBox="0 0 13 28" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M3.0909 13.871V26.8511C3.0909 27.0387 3.23753 27.1872 3.42274 27.1872H8.1843C8.36951 27.1872 8.51613 27.0387 8.51613 26.8511V13.66H11.9658C12.1355 13.66 12.2822 13.5271 12.2976 13.3474L12.6294 9.37752C12.6449 9.18215 12.4905 9.01023 12.2976 9.01023H8.51613V6.18913C8.51613 5.52488 9.04862 4.99348 9.69687 4.99348H12.3593C12.5446 4.99348 12.6912 4.84501 12.6912 4.65745V0.679781C12.6912 0.492229 12.5446 0.34375 12.3593 0.34375H7.86789C5.22858 0.34375 3.0909 2.50842 3.0909 5.18104V9.01023H0.713984C0.528769 9.01023 0.382141 9.15871 0.382141 9.34626V13.3161C0.382141 13.5037 0.528769 13.6521 0.713984 13.6521H3.0909V13.871Z"
-                                        fill="#553D67" />
-                                </svg>
+                               <img src="assets/facebook.svg" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M21.2519 5.15769C20.3567 5.15769 19.6235 5.89227 19.6235 6.80659C19.6235 7.71309 20.349 8.45548 21.2519 8.45548C22.1471 8.45548 22.8802 7.7209 22.8802 6.80659C22.8725 5.89227 22.1471 5.15769 21.2519 5.15769ZM14.0208 7.26765C10.2548 7.26765 7.19103 10.3701 7.19103 14.1836C7.19103 17.9972 10.2548 21.0996 14.0208 21.0996C17.7868 21.0996 20.8506 17.9972 20.8506 14.1836C20.8506 10.3701 17.7868 7.26765 14.0208 7.26765ZM14.0208 18.6068C11.6053 18.6068 9.64513 16.6218 9.64513 14.1758C9.64513 11.7298 11.6053 9.74491 14.0208 9.74491C16.4363 9.74491 18.3965 11.7298 18.3965 14.1758C18.3965 16.6218 16.4363 18.6068 14.0208 18.6068ZM27.7961 8.43204C27.7961 3.77449 24.0687 0 19.4692 0H8.47982C3.88034 0 0.152893 3.77449 0.152893 8.43204V19.5601C0.152893 24.2177 3.88034 27.9922 8.47982 27.9922H19.4692C24.0687 27.9922 27.7961 24.2177 27.7961 19.5601V8.43204ZM25.1877 19.568C25.1877 22.7642 22.6256 25.3586 19.4692 25.3586H8.47982C5.32346 25.3586 2.76133 22.7642 2.76133 19.568V8.43204C2.76133 5.23584 5.32346 2.64136 8.47982 2.64136H19.4692C22.6256 2.64136 25.1877 5.23584 25.1877 8.43204V19.568Z"
-                                        fill="#553D67" />
-                                </svg>
+                                <img src="assets/instagram.svg" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.8032 13.8243V22.1703C23.8032 22.3735 23.6411 22.5454 23.4328 22.5454H19.1806C18.9799 22.5454 18.8101 22.3813 18.8101 22.1703V14.4104C18.8101 12.3707 18.0924 10.9719 16.2789 10.9719C14.8975 10.9719 14.0795 11.9097 13.7167 12.824C13.5855 13.1522 13.5547 13.5976 13.5547 14.0587V22.1781C13.5547 22.3813 13.3926 22.5533 13.1842 22.5533H8.93205C8.7314 22.5533 8.56161 22.3891 8.56161 22.1781C8.56933 20.1151 8.61564 10.081 8.56934 7.7288C8.56162 7.51781 8.73139 7.3537 8.93975 7.3537H13.1842C13.3849 7.3537 13.5547 7.51781 13.5547 7.7288V9.51055C13.547 9.52618 13.5315 9.54181 13.5238 9.55744H13.5547V9.51055C14.2184 8.47901 15.3991 7.00204 18.0538 7.00204C21.3414 6.98641 23.8032 9.15889 23.8032 13.8243ZM1.18391 22.5454H5.43613C5.63678 22.5454 5.80655 22.3813 5.80655 22.1703V7.71317C5.80655 7.50999 5.6445 7.33807 5.43613 7.33807H1.18391C0.983265 7.33807 0.813477 7.50218 0.813477 7.71317V22.1703C0.813477 22.3813 0.983265 22.5454 1.18391 22.5454Z"
-                                        fill="#553D67" />
-                                    <path
-                                        d="M5.83742 2.70392C5.83742 4.19652 4.64125 5.4078 3.16726 5.4078C1.69326 5.4078 0.49707 4.19652 0.49707 2.70392C0.49707 1.21131 1.69326 3.73621e-05 3.16726 3.73621e-05C4.64125 -0.00777732 5.83742 1.21131 5.83742 2.70392Z"
-                                        fill="#553D67" />
-                                </svg>
+                                <img src="assets/linkedIn.svg" />
                             </a>
                         </li>
                     </ul>
